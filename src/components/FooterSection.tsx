@@ -54,7 +54,7 @@ const FooterSection = () => {
               Dengan segenap cinta,
             </span>
             <span className="font-serif text-3xl md:text-4xl text-charcoal">
-              A & S
+              Idin & Nurull
             </span>
             <div className="flex items-center gap-2 mt-4">
               <div className="w-8 h-px bg-gold" />
@@ -72,7 +72,7 @@ const FooterSection = () => {
           className="mt-16 pt-8 border-t border-dustyRose-light/30"
         >
           <p className="font-sans text-sm text-charcoal-light/60">
-            Dibuat dengan ♥ untuk istriku tercinta
+            Dibuat dengan ♥ oleh Idin Iskandar untuk Nurull Huda Rosalia
           </p>
           <p className="font-sans text-xs text-charcoal-light/40 mt-2">
             © 2024 — Sebuah Kisah Cinta

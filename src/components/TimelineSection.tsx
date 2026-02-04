@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
+// Import couple photos
+import coupleHome from "@/assets/couple-home.jpg";
+import coupleCafe from "@/assets/couple-cafe.jpg";
+import coupleWedding from "@/assets/couple-wedding.png";
+import coupleMall1 from "@/assets/couple-mall-1.jpeg";
+import coupleStairs from "@/assets/couple-stairs.jpg";
+
 interface TimelineItem {
   year: string;
   title: string;
@@ -13,32 +20,32 @@ const timelineData: TimelineItem[] = [
   {
     year: "2018",
     title: "Pertemuan Pertama",
-    description: "Di sebuah café kecil yang nyaman, takdir mempertemukan kita. Senyummu yang hangat saat itu masih tersimpan jelas dalam ingatanku, seperti baru terjadi kemarin.",
-    image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=2070&auto=format&fit=crop"
+    description: "Di sebuah momen yang tak terduga, takdir mempertemukan kita. Senyummu yang hangat saat itu masih tersimpan jelas dalam ingatanku, seperti baru terjadi kemarin.",
+    image: coupleHome
   },
   {
     year: "2019",
     title: "Jatuh Cinta",
     description: "Setiap percakapan semakin dalam, setiap tatapan semakin bermakna. Aku tahu saat itu, kamu adalah orang yang selama ini kucari. Cinta tumbuh tanpa kami sadari.",
-    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=2070&auto=format&fit=crop"
+    image: coupleCafe
   },
   {
     year: "2020",
     title: "Melamarmu",
     description: "Di bawah langit penuh bintang, aku berlutut dan bertanya apakah kamu mau menghabiskan sisa hidupmu bersamaku. Air mata bahagia dan jawaban 'Ya' darimu adalah hadiah terindah.",
-    image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2070&auto=format&fit=crop"
+    image: coupleStairs
   },
   {
     year: "2021",
     title: "Hari Pernikahan",
-    description: "Hari dimana dua jiwa menjadi satu. Kamu berjalan menuju altar dengan gaun putih, dan aku tahu hidupku telah sempurna. Janji suci kita terucap, selamanya.",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop"
+    description: "Hari dimana dua jiwa menjadi satu. Kamu berjalan dengan anggun, dan aku tahu hidupku telah sempurna. Janji suci kita terucap, selamanya.",
+    image: coupleWedding
   },
   {
-    year: "2023",
+    year: "2024",
     title: "Petualangan Bersama",
     description: "Menjelajahi dunia bersamamu adalah impian yang menjadi kenyataan. Setiap tempat baru, setiap pengalaman baru, semakin menguatkan cinta kita.",
-    image: "https://images.unsplash.com/photo-1494774157365-9e04c6720e47?q=80&w=2070&auto=format&fit=crop"
+    image: coupleMall1
   }
 ];
 
