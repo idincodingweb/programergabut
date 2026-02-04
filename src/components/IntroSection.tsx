@@ -20,10 +20,10 @@ const IntroSection = () => {
           </div>
 
           <p className="drop-cap font-sans text-lg md:text-xl leading-relaxed text-charcoal-light">
-            Sayang, website ini kubuat khusus untukmu. Di sini tersimpan kenangan-kenangan terindah kita, 
+            Nurull sayang, website ini kubuat khusus untukmu. Di sini tersimpan kenangan-kenangan terindah kita, 
             momen-momen yang mengukir senyum dan air mata bahagia. Setiap foto, setiap kata, adalah 
             bentuk rasa syukurku memilikimu. Terima kasih telah menjadi bagian dari kisah hidupku yang 
-            paling indah.
+            paling indah. — Idin Iskandar
           </p>
 
           <motion.div

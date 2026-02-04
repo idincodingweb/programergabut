@@ -2,50 +2,55 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
+// Import all couple photos
+import coupleHome from "@/assets/couple-home.jpg";
+import coupleCafe from "@/assets/couple-cafe.jpg";
+import coupleWedding from "@/assets/couple-wedding.png";
+import coupleMall1 from "@/assets/couple-mall-1.jpeg";
+import coupleMall2 from "@/assets/couple-mall-2.jpg";
+import coupleDate1 from "@/assets/couple-date-1.jpeg";
+import coupleDate2 from "@/assets/couple-date-2.jpeg";
+import coupleStairs from "@/assets/couple-stairs.jpg";
+
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?q=80&w=1469&auto=format&fit=crop",
-    alt: "Romantic moment",
-    height: "h-64"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=1471&auto=format&fit=crop",
-    alt: "Together forever",
+    src: coupleWedding,
+    alt: "Hari pernikahan",
     height: "h-80"
   },
   {
-    src: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?q=80&w=1470&auto=format&fit=crop",
-    alt: "Love journey",
-    height: "h-72"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1470&auto=format&fit=crop",
-    alt: "Wedding flowers",
+    src: coupleCafe,
+    alt: "Date di cafe",
     height: "h-64"
   },
   {
-    src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1469&auto=format&fit=crop",
-    alt: "Happy couple",
+    src: coupleHome,
+    alt: "Bersama di rumah",
+    height: "h-72"
+  },
+  {
+    src: coupleMall1,
+    alt: "Jalan-jalan di mall",
     height: "h-96"
   },
   {
-    src: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=1470&auto=format&fit=crop",
-    alt: "Beautiful wedding",
+    src: coupleMall2,
+    alt: "Shopping bersama",
     height: "h-72"
   },
   {
-    src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1374&auto=format&fit=crop",
-    alt: "Romantic sunset",
+    src: coupleDate1,
+    alt: "Quality time",
     height: "h-80"
   },
   {
-    src: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?q=80&w=1471&auto=format&fit=crop",
-    alt: "Love story",
+    src: coupleDate2,
+    alt: "Momen bahagia",
     height: "h-64"
   },
   {
-    src: "https://images.unsplash.com/photo-1519657337289-077653f724ed?q=80&w=1470&auto=format&fit=crop",
-    alt: "Celebration",
+    src: coupleStairs,
+    alt: "Perjalanan bersama",
     height: "h-72"
   }
 ];
@@ -92,7 +97,7 @@ const GallerySection = () => {
             Momen-Momen Manis Lainnya
           </h2>
           <p className="font-sans text-charcoal-light text-lg max-w-2xl mx-auto">
-            Koleksi foto kenangan indah yang tersimpan dalam hati
+            Koleksi foto kenangan indah Idin & Nurull
           </p>
           <div className="divider-ornament mt-8">
             <span className="text-gold text-xl">✦</span>

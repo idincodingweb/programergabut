@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import coupleWedding from "@/assets/couple-wedding.png";
 
 const HeroSection = () => {
   return (
@@ -6,8 +7,8 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop"
-          alt="Romantic couple"
+          src={coupleWedding}
+          alt="Idin & Nurull"
           className="w-full h-full object-cover"
         />
         {/* Overlay */}
@@ -57,7 +58,7 @@ const HeroSection = () => {
             transition={{ delay: 1.3, duration: 1 }}
             className="font-sans text-cream/70 text-base md:text-lg mt-8"
           >
-            Untuk istriku tercinta, <span className="text-gold">Sarah</span>
+            Untuk istriku tercinta, <span className="text-gold">Nurull Huda Rosalia</span>
           </motion.p>
         </motion.div>
 
