@@ -9,7 +9,7 @@ const MusicPlayer = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   // Romantic piano music - royalty free
-  const musicUrl = "https://cdn.pixabay.com/download/audio/2022/02/22/audio_d1718ab41b.mp3?filename=please-calm-my-mind-125566.mp3";
+  const musicUrl = "../assets/CintaSejati.mp3";
 
   useEffect(() => {
     if (audioRef.current) {
