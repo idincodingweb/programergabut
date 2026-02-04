@@ -26,9 +26,9 @@ const FooterSection = () => {
 
           {/* Romantic closing quote */}
           <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl text-charcoal leading-relaxed mb-8">
-            "Bersamamu, setiap hari adalah{" "}
-            <span className="text-gradient-gold italic">hadiah terindah</span>{" "}
-            dari Tuhan"
+            "Bersama, kami menulis{" "}
+            <span className="text-gradient-gold italic">kisah cinta terindah</span>{" "}
+            dalam hidup kami"
           </h3>
 
           <motion.div
@@ -40,7 +40,7 @@ const FooterSection = () => {
           />
 
           <p className="font-sans text-charcoal-light text-lg mb-12">
-            Terima kasih telah menjadi rumahku, cintaku, dan hidupku
+            Terima kasih sudah menyaksikan perjalanan cinta kami 💕
           </p>
 
           {/* Signature */}
@@ -51,7 +51,7 @@ const FooterSection = () => {
             className="inline-flex flex-col items-center"
           >
             <span className="font-serif text-2xl text-dustyRose italic mb-2">
-              Dengan segenap cinta,
+              Salam hangat,
             </span>
             <span className="font-serif text-3xl md:text-4xl text-charcoal">
               Idin & Nurull
@@ -72,10 +72,10 @@ const FooterSection = () => {
           className="mt-16 pt-8 border-t border-dustyRose-light/30"
         >
           <p className="font-sans text-sm text-charcoal-light/60">
-            Dibuat dengan ♥ oleh Idin Iskandar untuk Nurull Huda Rosalia
+            Dibuat dengan ♥ — Idin & Nurull 2024
           </p>
           <p className="font-sans text-xs text-charcoal-light/40 mt-2">
-            © 2024 — Sebuah Kisah Cinta
+            Semoga kisah kami menginspirasi kalian 💕
           </p>
         </motion.div>
       </div>

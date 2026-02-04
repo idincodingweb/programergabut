@@ -55,44 +55,83 @@ const MusicPlayer = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/80 backdrop-blur-sm"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/90 backdrop-blur-md"
           >
             <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
+              initial={{ scale: 0.8, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.8, opacity: 0 }}
-              className="bg-cream rounded-lg p-8 md:p-12 text-center max-w-md mx-4 shadow-elegant"
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="bg-gradient-to-b from-cream to-cream-dark rounded-2xl p-10 md:p-14 text-center max-w-lg mx-4 shadow-elegant relative overflow-hidden"
             >
+              {/* Decorative elements */}
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-dustyRose via-gold to-dustyRose" />
+              
               <motion.div
-                animate={{ scale: [1, 1.1, 1] }}
-                transition={{ repeat: Infinity, duration: 2 }}
+                animate={{ rotate: [0, 5, -5, 0] }}
+                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
                 className="mb-6"
               >
-                <Music className="w-16 h-16 text-dustyRose mx-auto" />
+                <span className="text-6xl">💕</span>
               </motion.div>
               
-              <h3 className="font-serif text-2xl md:text-3xl text-charcoal mb-4">
-                Kisah Cinta Kita
-              </h3>
+              <motion.h3 
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="font-serif text-3xl md:text-4xl text-charcoal mb-3"
+              >
+                Idin & Nurull
+              </motion.h3>
               
-              <p className="font-sans text-charcoal-light mb-8">
-                Untuk pengalaman terbaik, nikmati dengan musik romantis
-              </p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                className="font-serif text-lg text-dustyRose italic mb-2"
+              >
+                mengundangmu melihat kisah cinta kami
+              </motion.p>
               
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <button
-                  onClick={handlePlay}
-                  className="px-8 py-3 bg-dustyRose text-cream font-sans text-sm tracking-wider uppercase rounded-sm hover:bg-dustyRose/90 transition-colors"
-                >
-                  Putar Musik
-                </button>
-                <button
-                  onClick={() => setShowPrompt(false)}
-                  className="px-8 py-3 bg-transparent border border-charcoal-light text-charcoal font-sans text-sm tracking-wider uppercase rounded-sm hover:bg-charcoal/5 transition-colors"
-                >
-                  Tanpa Musik
-                </button>
-              </div>
+              <motion.div
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ delay: 0.4, duration: 0.8 }}
+                className="w-24 h-px mx-auto my-6"
+                style={{ background: "linear-gradient(90deg, transparent, hsl(38 45% 70%), transparent)" }}
+              />
+              
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                className="font-sans text-charcoal-light text-sm mb-8"
+              >
+                Scroll untuk melihat perjalanan kami ✨
+              </motion.p>
+              
+              <motion.button
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={handlePlay}
+                className="w-full px-10 py-4 bg-gradient-to-r from-dustyRose to-dustyRose-light text-cream font-serif text-lg tracking-wide rounded-full hover:shadow-lg transition-all flex items-center justify-center gap-3"
+              >
+                <Music className="w-5 h-5" />
+                Mulai Perjalanan
+              </motion.button>
+              
+              <motion.button
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.7 }}
+                onClick={() => setShowPrompt(false)}
+                className="mt-4 text-charcoal-light/60 font-sans text-xs hover:text-charcoal transition-colors"
+              >
+                atau lanjut tanpa musik →
+              </motion.button>
             </motion.div>
           </motion.div>
         )}
