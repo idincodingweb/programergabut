@@ -9,7 +9,7 @@ const MusicPlayer = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   // Romantic piano music - royalty free
-  const musicUrl = "../assets/CintaSejati.mp3";
+  const musicUrl = "https://github.com/idincodingweb/programergabut/blob/main/src/assets/CintaSejati.mp3";
 
   useEffect(() => {
     if (audioRef.current) {
