@@ -28,11 +28,11 @@ const HeroSection = () => {
             transition={{ delay: 0.5, duration: 1 }}
             className="text-gold font-sans text-sm tracking-[0.3em] uppercase mb-6"
           >
-            Sebuah Kisah Cinta
+            Perkenalkan
           </motion.p>
           
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-cream leading-tight mb-6">
-            Kisah Kita
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-cream leading-tight mb-4">
+            Idin & Nurull
           </h1>
           
           <motion.div
@@ -49,7 +49,7 @@ const HeroSection = () => {
             transition={{ delay: 1, duration: 1 }}
             className="font-serif text-xl md:text-2xl text-cream/90 italic"
           >
-            Sebuah Perjalanan
+            Kisah Cinta Kami
           </motion.p>
           
           <motion.p
@@ -58,7 +58,7 @@ const HeroSection = () => {
             transition={{ delay: 1.3, duration: 1 }}
             className="font-sans text-cream/70 text-base md:text-lg mt-8"
           >
-            Untuk istriku tercinta, <span className="text-gold">Nurull Huda Rosalia</span>
+            <span className="text-gold">Idin Iskandar</span> & <span className="text-gold">Nurull Huda Rosalia</span>
           </motion.p>
         </motion.div>
 

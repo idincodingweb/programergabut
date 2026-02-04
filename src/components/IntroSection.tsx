@@ -20,10 +20,10 @@ const IntroSection = () => {
           </div>
 
           <p className="drop-cap font-sans text-lg md:text-xl leading-relaxed text-charcoal-light">
-            Nurull sayang, website ini kubuat khusus untukmu. Di sini tersimpan kenangan-kenangan terindah kita, 
-            momen-momen yang mengukir senyum dan air mata bahagia. Setiap foto, setiap kata, adalah 
-            bentuk rasa syukurku memilikimu. Terima kasih telah menjadi bagian dari kisah hidupku yang 
-            paling indah. — Idin Iskandar
+            Hai semuanya! Perkenalkan, kami Idin Iskandar dan Nurull Huda Rosalia. 
+            Di website ini, kami ingin berbagi perjalanan kisah cinta kami dari awal bertemu 
+            hingga akhirnya bersatu. Setiap momen yang kami lalui bersama adalah bagian dari 
+            cerita indah yang ingin kami bagikan kepada kalian semua.
           </p>
 
           <motion.div
@@ -33,7 +33,7 @@ const IntroSection = () => {
             className="mt-12"
           >
             <p className="font-serif text-dustyRose text-xl italic">
-              "Dari hatiku yang paling dalam, untukmu..."
+              "Cinta sejati tidak datang karena mencari yang sempurna, tapi menyempurnakan bersama..."
             </p>
           </motion.div>
 
